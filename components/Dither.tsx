@@ -141,7 +141,7 @@ class RetroEffectImpl extends Effect {
             ['colorNum', new THREE.Uniform(4.0)],
             ['pixelSize', new THREE.Uniform(2.0)]
         ]);
-        super('RetroEffect', ditherFragmentShader, {uniforms});
+        super({ name: 'RetroEffect', fragmentShader: ditherFragmentShader, uniforms });
         this.uniforms = uniforms;
     }
 
